@@ -225,7 +225,6 @@ pcs = {
     '12-1': [[0,1,2,3,4,5,6,7,8,9,10,11],'<CCCCC6>',{'Z PARTNER': 'NONE'},{'FORTE': 'SAME'}]
 }
 
-# a dictionary of triad names as strings with a 
 triads = {
     'c+': [0,4,7],
     'c-': [0,3,7],
