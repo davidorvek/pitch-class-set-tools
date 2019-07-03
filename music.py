@@ -378,7 +378,7 @@ def find_rel(pc_set1, pc_set2):
     I = []
     M = []
     Z = []
-        
+
     for i in range(12):
         if sorted(trans(pc_set1, i)) == sorted(pc_set2):
             T.append(i)
@@ -392,7 +392,7 @@ def find_rel(pc_set1, pc_set2):
             M.append(i)
         else:
             pass
-        
+
     if int_vect(pc_set1) == int_vect(pc_set2) and T == [] and I == []:
         Z.append('YES')
     else:
@@ -476,7 +476,7 @@ def harm_cons(pc_set):
     elif i == 6:
       IC6 += 1
     else:
-      pass 
+      pass
   vector_array.append(IC1)
   vector_array.append(IC2)
   vector_array.append(IC3)
@@ -531,7 +531,7 @@ def rand_set():
     import random as r
     aggregate = [0,1,2,3,4,5,6,7,8,9,10,11]
     random_set = []
-    n = r.randint(2,12)
+    n = r.randint(2,11)
     for a in range(n):
         r.shuffle(aggregate)
         random_set.append(aggregate.pop())
@@ -576,7 +576,7 @@ def rel_to_prime(pc_set):
                 rahn_result.append('T%s' % (i))
             for j in rahn_rel['I']:
                 rahn_result.append('I%s' % (j))
-        
+
         forte_prime = pcs[find_prime(pc_set)][3]['FORTE']
         forte_rel = find_rel(given, forte_prime)
         if forte_rel['T'] == []:
@@ -636,7 +636,7 @@ def all_intervals(rotations):
 # Returns the best rotation
 
 def best(intervals):
-    counter = 0 
+    counter = 0
     while len(intervals) > 1:
         intervals_to_check = sorted([intervals[i][1][0] for i in range(len(intervals))])
         smallest = intervals_to_check[0]
