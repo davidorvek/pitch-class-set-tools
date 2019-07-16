@@ -1,3 +1,4 @@
+# JSON obect containing the Forte numbers, prime forms (using Rahn's alogrith), interval vectors, Z partners, and Forte prime form for every pitch-class set
 pcs = {
     '1-1': [[0],'<000000>',{'Z PARTNER': 'NONE'},{'FORTE': 'SAME'}],
     '2-1': [[0,1],'<100000>',{'Z PARTNER': 'NONE'},{'FORTE': 'SAME'}],
@@ -224,6 +225,7 @@ pcs = {
     '12-1': [[0,1,2,3,4,5,6,7,8,9,10,11],'<CCCCC6>',{'Z PARTNER': 'NONE'},{'FORTE': 'SAME'}]
 }
 
+# JSON object that allows every consonant triad to be converted into a pitch-class set
 triads = {
     'c+': [0,4,7],
     'c-': [0,3,7],
@@ -261,6 +263,9 @@ triads = {
     'b-': [11,2,6]
 }
 
+# Interval class consonance values as seen in David Huron,
+# "Interval-Class Content in Equally-Tempered Pitch-Class Sets: Common Scales Exhibit Optimum Tonal Consonance."
+# Music Perception, 11 no. 3 (1994): 289–305
 IC1_value = -1.428
 IC2_value = -0.582
 IC3_value = +0.594
@@ -268,6 +273,8 @@ IC4_value = +0.386
 IC5_value = +1.240
 IC6_value = -0.453
 
+# Transposition:
+# transposes a given pitch-class set n semitones
 def trans(pc_set, n):
     trans_result = []
     for pc in pc_set:
@@ -278,6 +285,8 @@ def trans(pc_set, n):
             trans_result.append(new_pc)
     return trans_result
 
+# Inversion:
+# inverts a given pitch-class set about pitch-class axis n
 def inv(pc_set, n):
     inv_result = []
     for pc in pc_set:
@@ -288,16 +297,20 @@ def inv(pc_set, n):
             inv_result.append(new_pc)
     return inv_result
 
+# Multiplicative transformation:
+# returns a new set by multiplying each pitch class in the set by n mod 12
 def mult(pc_set, n):
 	result = []
 	for i in pc_set:
 		result.append((i * n) % 12)
 	return result
 
-def find_i(root, distance):
+# Finds the inversional index that relates a set whose root is a given interval from a given root
+def find_i(root, interval):
 	index = (root + (root - (5 - distance))) % 12
 	return index
 
+# Interval vector
 def int_vect(pc_set):
     sort = sorted(pc_set)
     backwards = sort[::-1]
@@ -334,6 +347,8 @@ def int_vect(pc_set):
             pass
     return "<%s%s%s%s%s%s>" % (IC1, IC2, IC3, IC4, IC5, IC6)
 
+# Characteristic function:
+# returns a 12-point vector indicating which of the twelve pitch classes are present in the given set
 def char_func(pc_set):
     result = []
     for i in range(12):
@@ -343,6 +358,8 @@ def char_func(pc_set):
             result.append(0)
     return result
 
+# Degrees of symmetry:
+# returns a two-point vector indicating the number of axes under which the given set maps to itself under transposition and inversion respectively
 def deg_sym(pc_set):
     T = 0
     I = 0
@@ -357,22 +374,7 @@ def deg_sym(pc_set):
             I += 0
     return T, I
 
-def DVLS(x, y):
-        if len(x) > len(y):
-                n = len(x) - len(y)
-                for _ in range(n):
-                        y.append(0)
-        elif len(y) > len(x):
-                n = len(y) - len(x)
-                for _ in range(n):
-                        x.append(0)
-        else:
-                pass
-        total = 0
-        for a, b in zip(x, y):
-                total += ((b - a) % 12)
-        return (total % 12)
-
+# Checks to see if two given sets are related by transposition, inversion, multiplication, or share the same interval vector
 def find_rel(pc_set1, pc_set2):
     T = []
     I = []
@@ -401,6 +403,36 @@ def find_rel(pc_set1, pc_set2):
     results = {'T': T, 'I': I, 'M': M, 'Z': Z}
     return results
 
+# Pitch-class sum:
+# Returns the mod-twelve summed value of all of the pitch classes in a given pitch-class set
+def pc_sum(pc_set):
+    total = 0
+    for pc in pc_set:
+        total += pc
+    return (total % 12)
+
+# Directed Voice-Leading Sum:
+# As seen in Richard Cohn,
+# "Square Dances with Cubes"
+# Journal of Music Theory 42 no. 2 (1998): 285
+def DVLS(x, y):
+        if len(x) > len(y):
+                n = len(x) - len(y)
+                for _ in range(n):
+                        y.append(0)
+        elif len(y) > len(x):
+                n = len(y) - len(x)
+                for _ in range(n):
+                        x.append(0)
+        else:
+                pass
+        total = 0
+        for a, b in zip(x, y):
+                total += ((b - a) % 12)
+        return (total % 12)
+
+# Transposition invariance vector:
+# Returns a twelve-point vector indicating the number of pitch classes held invariant under each of the twelve transposition values
 def t_vect(pc_set):
     results = []
     for i in range(12):
@@ -414,6 +446,8 @@ def t_vect(pc_set):
         results.append(invariant)
     return results
 
+# Inversion invariance vector:
+# Returns a twelve-point vector indicating the number of pitch classes held invariant under each of the twelve inversional axes
 def i_vect(pc_set):
     results = []
     for i in range(12):
@@ -427,6 +461,8 @@ def i_vect(pc_set):
         results.append(invariant)
     return results
 
+# Interval string:
+# Returns the interval between each adjacent pitch class in an ordered pitch-class set
 def int_string(pc_set):
     result = []
     cycle = pc_set[1:]
@@ -438,12 +474,9 @@ def int_string(pc_set):
             result.append(a - b)
     return result
 
-def pc_sum(pc_set):
-    total = 0
-    for pc in pc_set:
-        total += pc
-    return (total % 12)
-
+# Returns the consonance value of a given set as seen in David Huron,
+# "Interval-Class Content in Equally-Tempered Pitch-Class Sets: Common Scales Exhibit Optimum Tonal Consonance."
+# Music Perception, 11 no. 3 (1994): 289–305
 def harm_cons(pc_set):
   sort = sorted(pc_set)
   backwards = sort[::-1]
@@ -491,31 +524,7 @@ def harm_cons(pc_set):
               + (IC6_value * vector_array[5]), 3)
   return total
 
-def find_prime(pc_set):
-    n = len(pc_set)
-    transpose = sorted(list(set(pc_set)))
-    invert = inv(transpose, 0)[::-1]
-    trans_array = []
-    inv_array = []
-    for i in range(n):
-        trans_rotated = transpose[i:] + transpose[:i]
-        x = 12 - trans_rotated[0]
-        trans_array.append(trans(trans_rotated, x))
-        inv_rotated = invert[i:] + invert[:i]
-        y = 12 - inv_rotated[0]
-        inv_array.append(trans(inv_rotated, y))
-    for z in pcs:
-        prime = pcs[z][0]
-        if prime in trans_array:
-            return z
-            break
-        elif prime in inv_array:
-            return z
-            break
-        else:
-            pass
-
-
+# Returns a dictionary of all intervals found between pitch classes n steps apart in a given ordered pitch-class set
 def inventory(pc_set):
     backwards = pc_set[::-1]
     result = {}
@@ -527,16 +536,18 @@ def inventory(pc_set):
             b = (b + 1) % len(backwards)
     return result
 
+# Generates a random pitch-class set of random size
 def rand_set():
     import random as r
     aggregate = [0,1,2,3,4,5,6,7,8,9,10,11]
     random_set = []
-    n = r.randint(2,11)
+    n = r.randint(2,10)
     for a in range(n):
         r.shuffle(aggregate)
         random_set.append(aggregate.pop())
     return random_set
 
+# Finds the relationship between a given pitch-class set and that set's prime form
 def rel_to_prime(pc_set):
     given = pc_set
     if pcs[find_prime(pc_set)][3]['FORTE'] == 'SAME':
@@ -597,6 +608,7 @@ def rel_to_prime(pc_set):
                 forte_result.append('I%s' % (j))
             return "Rahn = %s, Forte = %s" % (rahn_result, forte_result)
 
+# Generates the literal complement of a given pitch-class set
 def complement(pc_set):
 	aggregate = [0,1,2,3,4,5,6,7,8,9,10,11]
 	for i in pc_set:
@@ -606,8 +618,9 @@ def complement(pc_set):
 			pass
 	return aggregate
 
-# Returns n rotations of the sorted ordering of a given n-sized set
+## The following three functions are used to find the normal order of a given pitch-class sets
 
+# Returns n rotations of the sorted ordering of a given n-sized set
 def rotations(pc_set):
     rotations = []
     sorted_set = sorted(pc_set)
@@ -615,9 +628,7 @@ def rotations(pc_set):
         rotations.append(sorted_set[index:] + sorted_set[:index])
     return rotations
 
-# Returns all of the intervals from the first pc in each rotation to every other
-# pc int the set
-
+# Returns all of the intervals from the first pitch class in each rotation to every other pitch class in the set
 def all_intervals(rotations):
     all_intervals = []
     for rotation in rotations:
@@ -633,8 +644,7 @@ def all_intervals(rotations):
         all_intervals.append([rotation, intervals])
     return all_intervals
 
-# Returns the best rotation
-
+# Returns the most left-packed rotation of a given set as in Rahn's normal-order algorithm
 def best(intervals):
     counter = 0
     while len(intervals) > 1:
@@ -663,8 +673,32 @@ def best(intervals):
     return intervals[0][0] # Returns the only remaining set after all ineligable
                            # rotations have been deleted
 
-
 # Combines the above functions into a single function
-
 def normal_order(pc_set):
     return best(all_intervals(rotations(pc_set)))
+
+# Prime-form finder:
+# Returns the Forte number of a given pitch-class set
+def find_prime(pc_set):
+    n = len(pc_set)
+    transpose = sorted(list(set(pc_set)))
+    invert = inv(transpose, 0)[::-1]
+    trans_array = []
+    inv_array = []
+    for i in range(n):
+        trans_rotated = transpose[i:] + transpose[:i]
+        x = 12 - trans_rotated[0]
+        trans_array.append(trans(trans_rotated, x))
+        inv_rotated = invert[i:] + invert[:i]
+        y = 12 - inv_rotated[0]
+        inv_array.append(trans(inv_rotated, y))
+    for z in pcs:
+        prime = pcs[z][0]
+        if prime in trans_array:
+            return z
+            break
+        elif prime in inv_array:
+            return z
+            break
+        else:
+            pass
