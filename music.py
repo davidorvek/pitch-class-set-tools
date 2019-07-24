@@ -1,15 +1,15 @@
 import json
 
 # JSON object containing the Forte numbers, prime forms (using Rahn's alogrith), interval vectors, Z partners, and Forte prime form for every pitch-class set
-with open('/path/to/the/file/pcs.json','r') as pcs_file:
+with open('/users/davidorvek/documents/python/music/pcs.json','r') as pcs_file:
     pcs = json.load(pcs_file)
 
 # JSON object containing the sum-class system for every set class
-with open('//path/to/the/file/sum_class_system.json', 'r') as sum_class_file:
+with open('/users/davidorvek/documents/python/music/sum_class_system.json', 'r') as sum_class_file:
     sum_classes = json.load(sum_class_file)
 
 # JSON object that allows every consonant triad to be converted into a pitch-class set
-with open('//path/to/the/file/triads.json','r') as triads_file:
+with open('/users/davidorvek/documents/python/music/triads.json','r') as triads_file:
     triads = json.load(triads_file)
 
 # Interval class consonance values as seen in David Huron,
@@ -451,3 +451,28 @@ def find_prime(pc_set):
             break
         else:
             pass
+
+# Converts a pitch-class string that uses no spaces and t and e for 10 and 11 into an array
+def string2array(pc_string):
+    result = []
+    for i in pc_string:
+        if i == 't':
+            result.append(10)
+        elif i == 'e':
+            result.append(11)
+        else:
+            result.append(int(i))
+    return result
+
+
+# Converts a pitch-class array to a string that has no spaces and uses t and e for 10 and 11
+def array2string(pc_array):
+    result = ''
+    for i in pc_array:
+        if i == 10:
+            result = result + 't'
+        elif i == 11:
+            result = result + 'e'
+        else:
+            result = result + str(i)
+    return result
