@@ -1,8 +1,8 @@
 import json
 
 # JSON object containing the Forte numbers, prime forms (using Rahn's alogrith), interval vectors, Z partners, and Forte prime form for every pitch-class set
-with open('/users/davidorvek/documents/python/music/pcs.json','r') as pcs_file:
-    pcs = json.load(pcs_file)
+with open('/users/davidorvek/documents/python/music/pcs_data.json','r') as pcs_file:
+    pcs_data = json.load(pcs_file)
 
 
 # JSON object containing the sum-class system for every set class
