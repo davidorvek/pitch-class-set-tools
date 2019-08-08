@@ -87,6 +87,15 @@ def int_vect(pc_set):
     return vector
 
 
+# Takes interval vector and converts it to a printable string
+def print_vector(pc_set):
+    vector = int_vect(pc_set)
+    vector_string = '<'
+    vector_string += ''.join(['A' if i == 10 else 'B' if i == 11 else 'C' if i == 12 else str(i) for i in vector])
+    vector_string += '>'
+    return vector_string
+
+
 # Characteristic function:
 # returns a 12-point vector indicating which of the twelve pitch classes are present in the given set
 def char_func(pc_set):
@@ -248,8 +257,8 @@ def rand_set():
 # Finds the relationship between a given pitch-class set and that set's prime form
 def rel_to_prime(pc_set):
     given = pc_set
-    if pcs[find_prime(pc_set)][3]['FORTE'] == 'SAME':
-        prime = pcs[find_prime(pc_set)][0]
+    if pcs_data[find_prime(pc_set)]['forte'] == 'SAME':
+        prime = pcs_data[find_prime(pc_set)]['prime']
         rel = find_rel(given, prime)
         if rel['T'] == []:
             result = []
@@ -269,7 +278,7 @@ def rel_to_prime(pc_set):
                 result.append('I%s' % (j))
             return result
     else:
-        rahn_prime = pcs[find_prime(pc_set)][0]
+        rahn_prime = pcs_data[find_prime(pc_set)]['prime']
         rahn_rel = find_rel(given, rahn_prime)
         if rahn_rel['T'] == []:
             rahn_result = []
@@ -286,7 +295,7 @@ def rel_to_prime(pc_set):
             for j in rahn_rel['I']:
                 rahn_result.append('I%s' % (j))
 
-        forte_prime = pcs[find_prime(pc_set)][3]['FORTE']
+        forte_prime = pcs_data[find_prime(pc_set)]['forte']
         forte_rel = find_rel(given, forte_prime)
         if forte_rel['T'] == []:
             forte_result = []
@@ -386,8 +395,8 @@ def find_prime(pc_set):
         inv_rotated = invert[i:] + invert[:i]
         y = 12 - inv_rotated[0]
         inv_array.append(trans(inv_rotated, y))
-    for z in pcs:
-        prime = pcs[z][0]
+    for z in pcs_data:
+        prime = pcs_data[z]['prime']
         if prime in trans_array:
             return z
             break
