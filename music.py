@@ -398,13 +398,13 @@ def find_prime(pc_set):
 
 # Converts a string of pitch classes or intervals that uses no spaces and A, B, and C for 10, 11, and 12 into an array
 def string2array(input_string):
-    result = [10 if i == 'A' else 11 if i == 'B' else 12 if i == 'C' else int(i) for i in input_string]
+    result = [10 if i == 'a' else 11 if i == 'b' else 12 if i == 'c' else int(i) for i in input_string]
     return result
 
 
 # Converts an array of pitch classes or intervals to a string that has no spaces and uses A, B, and C for 10, 11, and 12
 def array2string(input_array):
-    result = ''.join(['A' if i == 10 else 'B' if i == 11 else 'C' if i == 12 else str(i) for i in input_array])
+    result = ''.join(['a' if i == 10 else 'b' if i == 11 else 'c' if i == 12 else str(i) for i in input_array])
     return result
 
 # Adds angled brackets to the beginning and end of a string of intervals or pitch classes
