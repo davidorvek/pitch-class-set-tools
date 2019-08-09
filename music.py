@@ -87,15 +87,6 @@ def int_vect(pc_set):
     return vector
 
 
-# Takes interval vector and converts it to a printable string
-def print_vector(pc_set):
-    vector = int_vect(pc_set)
-    vector_string = '<'
-    vector_string += ''.join(['A' if i == 10 else 'B' if i == 11 else 'C' if i == 12 else str(i) for i in vector])
-    vector_string += '>'
-    return vector_string
-
-
 # Characteristic function:
 # returns a 12-point vector indicating which of the twelve pitch classes are present in the given set
 def char_func(pc_set):
@@ -405,13 +396,18 @@ def find_prime(pc_set):
             break
 
 
-# Converts a pitch-class string that uses no spaces and t and e for 10 and 11 into an array
-def string2array(pc_string):
-    result = [10 if pc == 't' else 11 if pc == 'e' else int(pc) for pc in pc_string]
+# Converts a string of pitch classes or intervals that uses no spaces and A, B, and C for 10, 11, and 12 into an array
+def string2array(input_string):
+    result = [10 if i == 'A' else 11 if i == 'B' else 12 if i == 'C' else int(i) for i in input_string]
     return result
 
 
-# Converts a pitch-class array to a string that has no spaces and uses t and e for 10 and 11
-def array2string(pc_array):
-    result = ''.join(['t' if pc == 10 else 'e' if pc == 11 else str(pc) for pc in pc_array])
+# Converts an array of pitch classes or intervals to a string that has no spaces and uses A, B, and C for 10, 11, and 12
+def array2string(input_array):
+    result = ''.join(['A' if i == 10 else 'B' if i == 11 else 'C' if i == 12 else str(i) for i in input_array])
+    return result
+
+# Adds angled brackets to the beginning and end of a string of intervals or pitch classes
+def string2vector(input_string):
+    result = '<' + input_string + '>'
     return result
