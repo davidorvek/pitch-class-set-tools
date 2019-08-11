@@ -1,13 +1,16 @@
 import json
+import random as r
+
+aggregate = [0,1,2,3,4,5,6,7,8,9,10,11]
 
 # JSON object containing the Forte numbers, prime forms (using Rahn's alogrith), interval vectors, Z partners, and Forte prime form for every pitch-class set
-with open('/users/davidorvek/documents/python/music/pcs_data.json','r') as pcs_file:
-    pcs_data = json.load(pcs_file)
+with open('/users/davidorvek/documents/python/music/set_class.json','r') as sc_file:
+    sc = json.load(sc_file)
 
 
 # JSON object containing the sum-class system for every set class
 with open('/users/davidorvek/documents/python/music/sum_class_system.json', 'r') as sum_class_file:
-    sum_classes = json.load(sum_class_file)
+    sum_class = json.load(sum_class_file)
 
 
 # JSON object that allows every consonant triad to be converted into a pitch-class set
@@ -54,7 +57,7 @@ def find_i(root, interval):
 
 
 # Interval vector
-def int_vect(pc_set):
+def iv(pc_set):
     sort = sorted(pc_set)
     backwards = sort[::-1]
     intervals = []
@@ -126,7 +129,7 @@ def find_rel(pc_set1, pc_set2):
         if sorted(mult(pc_set1, i)) == sorted(pc_set2):
             M.append(i)
 
-    if int_vect(pc_set1) == int_vect(pc_set2) and T == [] and I == []:
+    if iv(pc_set1) == iv(pc_set2) and T == [] and I == []:
         Z.append('YES')
     else:
         Z.append('NO')
@@ -166,7 +169,7 @@ def DVLS(x, y):
 
 # Transposition invariance vector:
 # Returns a twelve-point vector indicating the number of pitch classes held invariant under each of the twelve transposition values
-def t_vect(pc_set):
+def t_invar(pc_set):
     result = []
     for i in range(12):
         invariant = 0
@@ -180,7 +183,7 @@ def t_vect(pc_set):
 
 # Inversion invariance vector:
 # Returns a twelve-point vector indicating the number of pitch classes held invariant under each of the twelve inversional axes
-def i_vect(pc_set):
+def i_invar(pc_set):
     result = []
     for i in range(12):
         invariant = 0
@@ -194,7 +197,7 @@ def i_vect(pc_set):
 
 # Interval string:
 # Returns the interval between each adjacent pitch class in an ordered pitch-class set
-def int_string(pc_set):
+def cint(pc_set):
     result = []
     cycle = pc_set[1:]
     cycle.append(pc_set[0])
@@ -210,7 +213,7 @@ def int_string(pc_set):
 # "Interval-Class Content in Equally-Tempered Pitch-Class Sets: Common Scales Exhibit Optimum Tonal Consonance."
 # Music Perception, 11 no. 3 (1994): 289–305
 def harm_cons(pc_set):
-  vector = int_vect(pc_set)
+  vector = iv(pc_set)
   total = round((IC1_value * vector[0]) \
               + (IC2_value * vector[1]) \
               + (IC3_value * vector[2]) \
@@ -235,7 +238,6 @@ def inventory(pc_set):
 
 # Generates a random pitch-class set of random size
 def rand_set():
-    import random as r
     aggregate = [0,1,2,3,4,5,6,7,8,9,10,11]
     random_set = []
     n = r.randint(2,10)
@@ -246,10 +248,10 @@ def rand_set():
 
 
 # Finds the relationship between a given pitch-class set and that set's prime form
-def rel_to_prime(pc_set):
+def rel2prime(pc_set):
     given = pc_set
-    if pcs_data[find_prime(pc_set)]['forte'] == 'SAME':
-        prime = pcs_data[find_prime(pc_set)]['prime']
+    if sc[find_forte(pc_set)]['forte'] == 'SAME':
+        prime = sc[find_forte(pc_set)]['prime']
         rel = find_rel(given, prime)
         if rel['T'] == []:
             result = []
@@ -269,7 +271,7 @@ def rel_to_prime(pc_set):
                 result.append('I%s' % (j))
             return result
     else:
-        rahn_prime = pcs_data[find_prime(pc_set)]['prime']
+        rahn_prime = sc[find_forte(pc_set)]['prime']
         rahn_rel = find_rel(given, rahn_prime)
         if rahn_rel['T'] == []:
             rahn_result = []
@@ -286,7 +288,7 @@ def rel_to_prime(pc_set):
             for j in rahn_rel['I']:
                 rahn_result.append('I%s' % (j))
 
-        forte_prime = pcs_data[find_prime(pc_set)]['forte']
+        forte_prime = sc[find_forte(pc_set)]['forte']
         forte_rel = find_rel(given, forte_prime)
         if forte_rel['T'] == []:
             forte_result = []
@@ -309,7 +311,6 @@ def rel_to_prime(pc_set):
 
 # Generates the literal complement of a given pitch-class set
 def complement(pc_set):
-    aggregate = [0,1,2,3,4,5,6,7,8,9,10,11]
     result = [i for i in aggregate if i not in pc_set]
     return result
 
@@ -373,7 +374,7 @@ def normal_order(pc_set):
 
 # Prime-form finder:
 # Returns the Forte number of a given pitch-class set
-def find_prime(pc_set):
+def find_forte(pc_set):
     n = len(pc_set)
     transpose = sorted(list(set(pc_set)))
     invert = inv(transpose, 0)[::-1]
@@ -386,8 +387,8 @@ def find_prime(pc_set):
         inv_rotated = invert[i:] + invert[:i]
         y = 12 - inv_rotated[0]
         inv_array.append(trans(inv_rotated, y))
-    for z in pcs_data:
-        prime = pcs_data[z]['prime']
+    for z in sc:
+        prime = sc[z]['prime']
         if prime in trans_array:
             return z
             break
@@ -398,16 +399,56 @@ def find_prime(pc_set):
 
 # Converts a string of pitch classes or intervals that uses no spaces and A, B, and C for 10, 11, and 12 into an array
 def string2array(input_string):
-    result = [10 if i == 'a' else 11 if i == 'b' else 12 if i == 'c' else int(i) for i in input_string]
+    result = [10 if i == 'T' else 11 if i == 'E' else 12 if i == 'W' else int(i) for i in input_string]
     return result
 
 
 # Converts an array of pitch classes or intervals to a string that has no spaces and uses A, B, and C for 10, 11, and 12
 def array2string(input_array):
-    result = ''.join(['a' if i == 10 else 'b' if i == 11 else 'c' if i == 12 else str(i) for i in input_array])
+    result = ''.join(['T' if i == 10 else 'E' if i == 11 else 'W' if i == 12 else str(i) for i in input_array])
     return result
 
 # Adds angled brackets to the beginning and end of a string of intervals or pitch classes
 def string2vector(input_string):
     result = '<' + input_string + '>'
     return result
+
+# Generates a random twelve-tone row
+def rand_row():
+    row = aggregate
+    r.shuffle(row)
+    return row
+
+# Generates a twelve-tone matrix for a given row as a dictionary
+def row_matrix(row):
+    i_row = inv(row, (row[0] + row[0]) % 12)
+    matrix = {}
+    for i in range(12):
+        p_form = trans(row, i)
+        r_form = p_form[::-1]
+        i_form = trans(i_row, i)
+        ri_form = i_form[::-1]
+        matrix['P%s' % (i)] = p_form
+        matrix['R%s' % (i)] = r_form
+        matrix['I%s' % (i)] = i_form
+        matrix['RI%s' % (i)] = ri_form
+    return matrix
+
+
+# Prints a twelve-tone row matrix
+def print_matrix(row):
+    print('\n')
+    i_row = inv(row, (row[0] + row[0]) % 12)
+    print('\t     I' + '  I'.join(['T' if pc == 10 else 'E' if pc == 11 else str(pc) for pc in row]))
+    print('\t    -----------------------------------------------')
+    for i in i_row:
+        if i < row[0]:
+            diff = (i + 12) - row[0]
+        else:
+            diff = i - row[0]
+        p = trans(row, diff)
+        p_string = '   '.join(['T' if pc == 10 else 'E' if pc == 11 else str(pc) for pc in p])
+        print("\tP%s | %s | R%s" % (p_string[0], p_string, p_string[0]))
+    print('\t    -----------------------------------------------')
+    print('\t    RI' + ' RI'.join(['T' if pc == 10 else 'E' if pc == 11 else str(pc) for pc in row]))
+    print('\n')
