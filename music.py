@@ -112,12 +112,11 @@ def deg_sym(pc_set):
     return [T, I]
 
 
-# Checks to see if two given sets are related by transposition, inversion, multiplication, or share the same interval vector
+# Checks to see if two given sets are related by transposition, inversion, multiplication, or share the NA interval vector
 def find_rel(pc_set1, pc_set2):
+    result = {}
     T = []
     I = []
-    M = []
-    Z = []
 
     for i in range(12):
         if sorted(trans(pc_set1, i)) == sorted(pc_set2):
@@ -125,17 +124,25 @@ def find_rel(pc_set1, pc_set2):
 
         if sorted(inv(pc_set1, i)) == sorted(pc_set2):
             I.append(i)
+    result['T'] = T
+    result['I'] = I
 
-        if sorted(mult(pc_set1, i)) == sorted(pc_set2):
-            M.append(i)
+    if sorted(mult(pc_set1, 7)) == sorted(pc_set2):
+        result['M'] = 'YES'
+    else:
+        result['M'] = 'NO'
 
     if iv(pc_set1) == iv(pc_set2) and T == [] and I == []:
-        Z.append('YES')
+        result['Z'] = 'YES'
     else:
-        Z.append('NO')
+        result['Z'] = 'NO'
 
-    results = {'T': T, 'I': I, 'M': M, 'Z': Z}
-    return results
+    if sc[find_forte(pc_set1)]['complement'] == find_forte(pc_set2):
+        result['C'] = 'YES'
+    else:
+        result['C'] = 'NO'
+
+    return result
 
 
 # Pitch-class sum:
@@ -250,7 +257,7 @@ def rand_set():
 # Finds the relationship between a given pitch-class set and that set's prime form
 def rel2prime(pc_set):
     given = pc_set
-    if sc[find_forte(pc_set)]['forte'] == 'SAME':
+    if sc[find_forte(pc_set)]['forte'] == 'NA':
         prime = sc[find_forte(pc_set)]['prime']
         rel = find_rel(given, prime)
         if rel['T'] == []:
