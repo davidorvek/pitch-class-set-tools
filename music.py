@@ -1,5 +1,6 @@
 import json
 import random as r
+from collections import Counter
 
 aggregate = [0,1,2,3,4,5,6,7,8,9,10,11]
 
@@ -39,7 +40,7 @@ def trans(pc_set, n):
 # Inversion:
 # inverts a given pitch-class set about pitch-class axis n
 def inv(pc_set, n):
-    result = [(n + 12) - pc if n < pc else n - pc for pc in pc_set]
+    result = [(n - pc) % 12 for pc in pc_set]
     return result
 
 
@@ -87,6 +88,27 @@ def iv(pc_set):
         else:
             print("ERROR: NON MOD 12 VALUE")
     return vector
+
+
+# Convert a given list of intervals to interval classes
+def int_class(intervals):
+    result = []
+    for interval in intervals:
+        if interval == 1 or interval == 11:
+            result.append(1)
+        elif interval == 2 or interval == 10:
+            result.append(2)
+        elif interval == 3 or interval == 9:
+            result.append(3)
+        elif interval == 4 or interval == 8:
+            result.append(4)
+        elif interval == 5 or interval == 7:
+            result.append(5)
+        elif interval == 6:
+            result.append(6)
+        else:
+            print('ERROR: NON MOD 12 VALUE')
+    return result
 
 
 # Characteristic function:
@@ -459,22 +481,22 @@ def print_matrix(row):
     print('\t    RI' + ' RI'.join(['T' if pc == 10 else 'E' if pc == 11 else str(pc) for pc in row]))
     print('\n')
 
-# Convert a given list of intervals to interval classes
-def int_class(intervals):
-    result = []
-    for interval in intervals:
-        if interval == 1 or interval == 11:
-            result.append(1)
-        elif interval == 2 or interval == 10:
-            result.append(2)
-        elif interval == 3 or interval == 9:
-            result.append(3)
-        elif interval == 4 or interval == 8:
-            result.append(4)
-        elif interval == 5 or interval == 7:
-            result.append(5)
-        elif interval == 6:
-            result.append(6)
-        else:
-            print('ERROR: NON MOD 12 VALUE')
+
+# Gets the number of unique row forms for the given row
+def uniq_forms(row):
+    matrix = row_matrix(row)
+    uniq_forms = len(Counter(str(i) for i in matrix.values()).values())
+    return uniq_forms
+
+
+# Gets the indexes under which a given row is P, I, and RI combinatorial
+def comb(hexachord):
+    result = {'P': [], 'I': [], 'RI': []}
+    for i in range(12):
+        if sorted(trans(hexachord, i)) == sorted(complement(hexachord)):
+            result['P'].append(i)
+        elif sorted(inv(hexachord, i)) == sorted(complement(hexachord)):
+            result['I'].append(i)
+        elif sorted(inv(hexachord, i)) == sorted(hexachord):
+            result['RI'].append(i)
     return result
