@@ -71,7 +71,6 @@ def iv(pc_set):
             x += 1
         backwards.pop(0)
 
-
     for i in intervals:
         if i == 1 or i == 11:
             vector[0] += 1
@@ -459,3 +458,23 @@ def print_matrix(row):
     print('\t    -----------------------------------------------')
     print('\t    RI' + ' RI'.join(['T' if pc == 10 else 'E' if pc == 11 else str(pc) for pc in row]))
     print('\n')
+
+# Convert a given list of intervals to interval classes
+def int_class(intervals):
+    result = []
+    for interval in intervals:
+        if interval == 1 or interval == 11:
+            result.append(1)
+        elif interval == 2 or interval == 10:
+            result.append(2)
+        elif interval == 3 or interval == 9:
+            result.append(3)
+        elif interval == 4 or interval == 8:
+            result.append(4)
+        elif interval == 5 or interval == 7:
+            result.append(5)
+        elif interval == 6:
+            result.append(6)
+        else:
+            print('ERROR: NON MOD 12 VALUE')
+    return result
