@@ -2,8 +2,6 @@ import json
 import random as r
 from collections import Counter
 
-aggregate = [0,1,2,3,4,5,6,7,8,9,10,11]
-
 # JSON object containing the Forte numbers, prime forms (using Rahn's alogrith), interval vectors, Z partners, and Forte prime form for every pitch-class set
 with open('/users/davidorvek/documents/python/music/set_class.json','r') as sc_file:
     sc = json.load(sc_file)
@@ -46,7 +44,7 @@ def inv(pc_set, n):
 
 # Multiplicative transformation:
 # returns a new set by multiplying each pitch class in the set by n mod 12
-def mult(pc_set, n):
+def mult(pc_set, n = 7):
     result = [(pc * n) % 12 for pc in pc_set]
     return result
 
@@ -148,7 +146,7 @@ def find_rel(pc_set1, pc_set2):
     result['T'] = T
     result['I'] = I
 
-    if sorted(mult(pc_set1, 7)) == sorted(pc_set2):
+    if find_forte(pc_set1) != find_forte(pc_set2) and find_forte(mult(pc_set1, 7)) == find_forte(pc_set2):
         result['M'] = 'YES'
     else:
         result['M'] = 'NO'
@@ -264,12 +262,11 @@ def inventory(pc_set):
     return result
 
 
-# Generates a random pitch-class set of random size
-def rand_set():
+# Generates a random pitch-class set of specified size or default to random size between 2 and 10 inclusive
+def rand_set(n = r.randint(2,10)):
     aggregate = [0,1,2,3,4,5,6,7,8,9,10,11]
     random_set = []
-    n = r.randint(2,10)
-    for a in range(n):
+    for i in range(n):
         r.shuffle(aggregate)
         random_set.append(aggregate.pop())
     return random_set
@@ -339,6 +336,7 @@ def rel2prime(pc_set):
 
 # Generates the literal complement of a given pitch-class set
 def complement(pc_set):
+    aggregate = [0,1,2,3,4,5,6,7,8,9,10,11]
     result = [i for i in aggregate if i not in pc_set]
     return result
 
@@ -441,11 +439,6 @@ def string2vector(input_string):
     result = '<' + input_string + '>'
     return result
 
-# Generates a random twelve-tone row
-def rand_row():
-    row = aggregate
-    r.shuffle(row)
-    return row
 
 # Generates a twelve-tone matrix for a given row as a dictionary
 def row_matrix(row):
@@ -465,10 +458,14 @@ def row_matrix(row):
 
 # Prints a twelve-tone row matrix
 def print_matrix(row):
+    line = '---'
+    for i in range(len(row) - 1):
+        line += '----'
     print('\n')
     i_row = inv(row, (row[0] + row[0]) % 12)
     print('\t     I' + '  I'.join(['T' if pc == 10 else 'E' if pc == 11 else str(pc) for pc in row]))
-    print('\t    -----------------------------------------------')
+
+    print('\t    %s' % (line))
     for i in i_row:
         if i < row[0]:
             diff = (i + 12) - row[0]
@@ -477,7 +474,7 @@ def print_matrix(row):
         p = trans(row, diff)
         p_string = '   '.join(['T' if pc == 10 else 'E' if pc == 11 else str(pc) for pc in p])
         print("\tP%s | %s | R%s" % (p_string[0], p_string, p_string[0]))
-    print('\t    -----------------------------------------------')
+    print('\t    %s' % (line))
     print('\t    RI' + ' RI'.join(['T' if pc == 10 else 'E' if pc == 11 else str(pc) for pc in row]))
     print('\n')
 
