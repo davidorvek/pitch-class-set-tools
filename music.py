@@ -3,17 +3,17 @@ import random as r
 from collections import Counter
 
 # JSON object containing the Forte numbers, prime forms (using Rahn's alogrith), interval vectors, Z partners, and Forte prime form for every pitch-class set
-with open('/users/davidorvek/documents/python/music/set_class.json','r') as sc_file:
+with open('/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/set_class.json','r') as sc_file:
     sc = json.load(sc_file)
 
 
 # JSON object containing the sum-class system for every set class
-with open('/users/davidorvek/documents/python/music/sum_class_system.json', 'r') as sum_class_file:
+with open('/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/sum_class_system.json', 'r') as sum_class_file:
     sum_class = json.load(sum_class_file)
 
 
 # JSON object that allows every consonant triad to be converted into a pitch-class set
-with open('/users/davidorvek/documents/python/music/triads.json','r') as triads_file:
+with open('/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/triads.json','r') as triads_file:
     triads = json.load(triads_file)
 
 
@@ -168,6 +168,7 @@ def find_rel(pc_set1, pc_set2):
 # Returns the mod-twelve summed value of all of the pitch classes in a given pitch-class set
 def pc_sum(pc_set):
     total = 0
+    pc_set = list(dict.fromkeys(pc_set))
     for pc in pc_set:
         total += pc
     return (total % 12)
