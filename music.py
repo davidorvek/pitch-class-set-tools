@@ -399,7 +399,7 @@ def normal_order(pc_set):
     return best(all_intervals(rotations(pc_set)))
 
 
-# Prime-form finder:
+# Forte number finder:
 # Returns the Forte number of a given pitch-class set
 def find_forte(pc_set):
     n = len(pc_set)
@@ -498,3 +498,34 @@ def comb(hexachord):
         elif sorted(inv(hexachord, i)) == sorted(hexachord):
             result['RI'].append(i)
     return result
+
+
+# Transposes the given pitch-class set to begin on 0
+def to_zero(pc_set):
+    first_note = pc_set[0]
+    if first_note == 0:
+        return pc_set
+    else:
+        index = 12 - first_note
+        return trans(pc_set, index)
+
+
+## The following two functions are used to generate an all-interval twelve-tone row
+
+# Returns a list containing the number of times each interval in a row appears
+def interval_counts():
+    row = rand_set(12)
+    intervals = cint(row)
+    del intervals[11]
+    counts = sorted(Counter(intervals).values())
+    return counts, row
+
+
+# Checks the output of interval_counts and returns an all-interval row when it finds one
+def all_interval_row():
+    data = interval_counts()
+    counts = data[0]
+    while counts[len(counts) - 1] > 1:
+        data = interval_counts()
+        counts = data[0]
+    return data[1]
