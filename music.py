@@ -1,6 +1,7 @@
 import json
 import random as r
 from collections import Counter
+import itertools
 
 # JSON object containing the Forte numbers, prime forms (using Rahn's alogrith), interval vectors, Z partners, and Forte prime form for every pitch-class set
 with open('/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/set_class.json','r') as sc_file:
@@ -529,3 +530,15 @@ def all_interval_row():
         data = interval_counts()
         counts = data[0]
     return data[1]
+
+# Returns a dictionary counting the number of each subset as a Forte number
+def subsets(pc_set):
+    result = []
+    n = (len(pc_set) - 1)
+    while n > 2:
+        subsets = itertools.combinations(pc_set, n)
+        subsets = [list(i) for i in subsets]
+        for set in subsets:
+            result.append(find_forte(set))
+        n -= 1
+    return dict(Counter(result))
