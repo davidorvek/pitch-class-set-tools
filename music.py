@@ -531,14 +531,22 @@ def all_interval_row():
         counts = data[0]
     return data[1]
 
+
 # Returns a dictionary counting the number of each subset as a Forte number
-def subsets(pc_set):
+def subsets(pc_set, cardinality = 'all'):
     result = []
-    n = (len(pc_set) - 1)
-    while n > 2:
-        subsets = itertools.combinations(pc_set, n)
+    if cardinality == 'all':
+        n = (len(pc_set) - 1)
+        while n > 2:
+            subsets = itertools.combinations(pc_set, n)
+            subsets = [list(i) for i in subsets]
+            for set in subsets:
+                result.append(find_forte(set))
+            n -= 1
+        return dict(Counter(result))
+    else:
+        subsets = itertools.combinations(pc_set, cardinality)
         subsets = [list(i) for i in subsets]
         for set in subsets:
             result.append(find_forte(set))
-        n -= 1
-    return dict(Counter(result))
+        return dict(Counter(result))
