@@ -537,7 +537,7 @@ def subsets(pc_set, cardinality = 'all'):
     result = []
     if cardinality == 'all':
         n = (len(pc_set) - 1)
-        while n > 2:
+        while n >= 2:
             subsets = itertools.combinations(pc_set, n)
             subsets = [list(i) for i in subsets]
             for set in subsets:
