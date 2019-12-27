@@ -14,7 +14,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "1-1",
-    "complement": "11-1"
+    "complement": "11-1",
+    "alternate": "NA"
   },
   "2-1": {
     "prime": [
@@ -32,7 +33,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "2-5",
-    "complement": "10-1"
+    "complement": "10-1",
+    "alternate": "NA"
   },
   "2-2": {
     "prime": [
@@ -50,7 +52,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "2-2",
-    "complement": "10-2"
+    "complement": "10-2",
+    "alternate": "NA"
   },
   "2-3": {
     "prime": [
@@ -68,7 +71,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "2-3",
-    "complement": "10-3"
+    "complement": "10-3",
+    "alternate": "NA"
   },
   "2-4": {
     "prime": [
@@ -86,7 +90,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "2-4",
-    "complement": "10-4"
+    "complement": "10-4",
+    "alternate": "NA"
   },
   "2-5": {
     "prime": [
@@ -104,7 +109,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "2-1",
-    "complement": "10-5"
+    "complement": "10-5",
+    "alternate": "NA"
   },
   "2-6": {
     "prime": [
@@ -122,7 +128,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "2-6",
-    "complement": "10-6"
+    "complement": "10-6",
+    "alternate": "NA"
   },
   "3-1": {
     "prime": [
@@ -141,7 +148,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "3-9",
-    "complement": "9-1"
+    "complement": "9-1",
+    "alternate": "NA"
   },
   "3-2": {
     "prime": [
@@ -160,7 +168,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "3-7",
-    "complement": "9-2"
+    "complement": "9-2",
+    "alternate": "NA"
   },
   "3-3": {
     "prime": [
@@ -179,7 +188,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "3-11",
-    "complement": "9-3"
+    "complement": "9-3",
+    "alternate": "NA"
   },
   "3-4": {
     "prime": [
@@ -198,7 +208,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "3-4",
-    "complement": "9-4"
+    "complement": "9-4",
+    "alternate": "NA"
   },
   "3-5": {
     "prime": [
@@ -217,7 +228,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "3-5",
-    "complement": "9-5"
+    "complement": "9-5",
+    "alternate": "NA"
   },
   "3-6": {
     "prime": [
@@ -236,7 +248,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "3-6",
-    "complement": "9-6"
+    "complement": "9-6",
+    "alternate": "NA"
   },
   "3-7": {
     "prime": [
@@ -255,7 +268,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "3-2",
-    "complement": "9-7"
+    "complement": "9-7",
+    "alternate": "NA"
   },
   "3-8": {
     "prime": [
@@ -274,7 +288,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "3-8",
-    "complement": "9-8"
+    "complement": "9-8",
+    "alternate": "NA"
   },
   "3-9": {
     "prime": [
@@ -293,7 +308,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "3-1",
-    "complement": "9-9"
+    "complement": "9-9",
+    "alternate": "NA"
   },
   "3-10": {
     "prime": [
@@ -312,7 +328,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "3-10",
-    "complement": "9-10"
+    "complement": "9-10",
+    "alternate": "Diminished Triad"
   },
   "3-11": {
     "prime": [
@@ -331,7 +348,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "3-3",
-    "complement": "9-11"
+    "complement": "9-11",
+    "alternate": "Consonant Triads"
   },
   "3-12": {
     "prime": [
@@ -350,7 +368,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "3-12",
-    "complement": "9-12"
+    "complement": "9-12",
+    "alternate": "Augmented Triad"
   },
   "4-1": {
     "prime": [
@@ -370,7 +389,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-23",
-    "complement": "8-1"
+    "complement": "8-1",
+    "alternate": "NA"
   },
   "4-2": {
     "prime": [
@@ -390,7 +410,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-22",
-    "complement": "8-2"
+    "complement": "8-2",
+    "alternate": "NA"
   },
   "4-3": {
     "prime": [
@@ -410,7 +431,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-26",
-    "complement": "8-3"
+    "complement": "8-3",
+    "alternate": "NA"
   },
   "4-4": {
     "prime": [
@@ -430,7 +452,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-14",
-    "complement": "8-4"
+    "complement": "8-4",
+    "alternate": "NA"
   },
   "4-5": {
     "prime": [
@@ -450,7 +473,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-16",
-    "complement": "8-5"
+    "complement": "8-5",
+    "alternate": "NA"
   },
   "4-6": {
     "prime": [
@@ -470,7 +494,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-6",
-    "complement": "8-6"
+    "complement": "8-6",
+    "alternate": "NA"
   },
   "4-7": {
     "prime": [
@@ -490,7 +515,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-20",
-    "complement": "8-7"
+    "complement": "8-7",
+    "alternate": "NA"
   },
   "4-8": {
     "prime": [
@@ -510,7 +536,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-8",
-    "complement": "8-8"
+    "complement": "8-8",
+    "alternate": "NA"
   },
   "4-9": {
     "prime": [
@@ -530,7 +557,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-9",
-    "complement": "8-9"
+    "complement": "8-9",
+    "alternate": "NA"
   },
   "4-10": {
     "prime": [
@@ -550,7 +578,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-10",
-    "complement": "8-10"
+    "complement": "8-10",
+    "alternate": "NA"
   },
   "4-11": {
     "prime": [
@@ -570,7 +599,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-11",
-    "complement": "8-11"
+    "complement": "8-11",
+    "alternate": "NA"
   },
   "4-12": {
     "prime": [
@@ -590,7 +620,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-27",
-    "complement": "8-12"
+    "complement": "8-12",
+    "alternate": "NA"
   },
   "4-13": {
     "prime": [
@@ -610,7 +641,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-13",
-    "complement": "8-13"
+    "complement": "8-13",
+    "alternate": "NA"
   },
   "4-14": {
     "prime": [
@@ -630,7 +662,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-4",
-    "complement": "8-14"
+    "complement": "8-14",
+    "alternate": "NA"
   },
   "4-z15": {
     "prime": [
@@ -650,7 +683,8 @@
     "z": "4-z29",
     "forte": "NA",
     "m": "4-z29",
-    "complement": "8-z15"
+    "complement": "8-z15",
+    "alternate": "All-Interval Tetrachord"
   },
   "4-16": {
     "prime": [
@@ -670,7 +704,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-5",
-    "complement": "8-16"
+    "complement": "8-16",
+    "alternate": "NA"
   },
   "4-17": {
     "prime": [
@@ -690,7 +725,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-17",
-    "complement": "8-17"
+    "complement": "8-17",
+    "alternate": "NA"
   },
   "4-18": {
     "prime": [
@@ -710,7 +746,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-18",
-    "complement": "8-18"
+    "complement": "8-18",
+    "alternate": "NA"
   },
   "4-19": {
     "prime": [
@@ -730,7 +767,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-19",
-    "complement": "8-19"
+    "complement": "8-19",
+    "alternate": "NA"
   },
   "4-20": {
     "prime": [
@@ -750,7 +788,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-7",
-    "complement": "8-20"
+    "complement": "8-20",
+    "alternate": "MM7 Chord"
   },
   "4-21": {
     "prime": [
@@ -770,7 +809,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-21",
-    "complement": "8-21"
+    "complement": "8-21",
+    "alternate": "NA"
   },
   "4-22": {
     "prime": [
@@ -790,7 +830,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-2",
-    "complement": "8-22"
+    "complement": "8-22",
+    "alternate": "NA"
   },
   "4-23": {
     "prime": [
@@ -810,7 +851,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-1",
-    "complement": "8-23"
+    "complement": "8-23",
+    "alternate": "NA"
   },
   "4-24": {
     "prime": [
@@ -830,7 +872,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-24",
-    "complement": "8-24"
+    "complement": "8-24",
+    "alternate": "NA"
   },
   "4-25": {
     "prime": [
@@ -850,7 +893,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-25",
-    "complement": "8-25"
+    "complement": "8-25",
+    "alternate": "French Augmented Sixth Chord"
   },
   "4-26": {
     "prime": [
@@ -870,7 +914,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-3",
-    "complement": "8-26"
+    "complement": "8-26",
+    "alternate": "mm7 Chord"
   },
   "4-27": {
     "prime": [
@@ -890,7 +935,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-12",
-    "complement": "8-27"
+    "complement": "8-27",
+    "alternate": "Half-Diminished and Dominant Seventh Chord"
   },
   "4-28": {
     "prime": [
@@ -910,7 +956,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "4-28",
-    "complement": "8-28"
+    "complement": "8-28",
+    "alternate": "Fully-Diminshed Seventh Chord"
   },
   "4-z29": {
     "prime": [
@@ -930,7 +977,8 @@
     "z": "4-z15",
     "forte": "NA",
     "m": "4-z15",
-    "complement": "8-z29"
+    "complement": "8-z29",
+    "alternate": "All-Interval Tetrachord"
   },
   "5-1": {
     "prime": [
@@ -951,7 +999,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-35",
-    "complement": "7-1"
+    "complement": "7-1",
+    "alternate": "NA"
   },
   "5-2": {
     "prime": [
@@ -972,7 +1021,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-23",
-    "complement": "7-2"
+    "complement": "7-2",
+    "alternate": "NA"
   },
   "5-3": {
     "prime": [
@@ -993,7 +1043,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-27",
-    "complement": "7-3"
+    "complement": "7-3",
+    "alternate": "NA"
   },
   "5-4": {
     "prime": [
@@ -1014,7 +1065,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-29",
-    "complement": "7-4"
+    "complement": "7-4",
+    "alternate": "NA"
   },
   "5-5": {
     "prime": [
@@ -1035,7 +1087,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-14",
-    "complement": "7-5"
+    "complement": "7-5",
+    "alternate": "NA"
   },
   "5-6": {
     "prime": [
@@ -1056,7 +1109,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-20",
-    "complement": "7-6"
+    "complement": "7-6",
+    "alternate": "NA"
   },
   "5-7": {
     "prime": [
@@ -1077,7 +1131,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-7",
-    "complement": "7-7"
+    "complement": "7-7",
+    "alternate": "NA"
   },
   "5-8": {
     "prime": [
@@ -1098,7 +1153,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-34",
-    "complement": "7-8"
+    "complement": "7-8",
+    "alternate": "NA"
   },
   "5-9": {
     "prime": [
@@ -1119,7 +1175,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-24",
-    "complement": "7-9"
+    "complement": "7-9",
+    "alternate": "NA"
   },
   "5-10": {
     "prime": [
@@ -1140,7 +1197,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-25",
-    "complement": "7-10"
+    "complement": "7-10",
+    "alternate": "NA"
   },
   "5-11": {
     "prime": [
@@ -1161,7 +1219,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-11",
-    "complement": "7-11"
+    "complement": "7-11",
+    "alternate": "NA"
   },
   "5-z12": {
     "prime": [
@@ -1182,7 +1241,8 @@
     "z": "5-z36",
     "forte": "NA",
     "m": "5-z12",
-    "complement": "7-z12"
+    "complement": "7-z12",
+    "alternate": "NA"
   },
   "5-13": {
     "prime": [
@@ -1203,7 +1263,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-30",
-    "complement": "7-13"
+    "complement": "7-13",
+    "alternate": "NA"
   },
   "5-14": {
     "prime": [
@@ -1224,7 +1285,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-5",
-    "complement": "7-14"
+    "complement": "7-14",
+    "alternate": "NA"
   },
   "5-15": {
     "prime": [
@@ -1245,7 +1307,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-15",
-    "complement": "7-15"
+    "complement": "7-15",
+    "alternate": "NA"
   },
   "5-16": {
     "prime": [
@@ -1266,7 +1329,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-32",
-    "complement": "7-16"
+    "complement": "7-16",
+    "alternate": "NA"
   },
   "5-z17": {
     "prime": [
@@ -1287,7 +1351,8 @@
     "z": "5-z37",
     "forte": "NA",
     "m": "5-z37",
-    "complement": "7-z17"
+    "complement": "7-z17",
+    "alternate": "Farben Chord"
   },
   "5-z18": {
     "prime": [
@@ -1308,7 +1373,8 @@
     "z": "5-z38",
     "forte": "NA",
     "m": "5-z38",
-    "complement": "7-z18"
+    "complement": "7-z18",
+    "alternate": "NA"
   },
   "5-19": {
     "prime": [
@@ -1329,7 +1395,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-19",
-    "complement": "7-19"
+    "complement": "7-19",
+    "alternate": "NA"
   },
   "5-20": {
     "prime": [
@@ -1356,7 +1423,8 @@
       8
     ],
     "m": "5-6",
-    "complement": "7-20"
+    "complement": "7-20",
+    "alternate": "NA"
   },
   "5-21": {
     "prime": [
@@ -1377,7 +1445,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-21",
-    "complement": "7-21"
+    "complement": "7-21",
+    "alternate": "NA"
   },
   "5-22": {
     "prime": [
@@ -1398,7 +1467,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-22",
-    "complement": "7-22"
+    "complement": "7-22",
+    "alternate": "NA"
   },
   "5-23": {
     "prime": [
@@ -1419,7 +1489,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-2",
-    "complement": "7-23"
+    "complement": "7-23",
+    "alternate": "NA"
   },
   "5-24": {
     "prime": [
@@ -1440,7 +1511,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-9",
-    "complement": "7-24"
+    "complement": "7-24",
+    "alternate": "NA"
   },
   "5-25": {
     "prime": [
@@ -1461,7 +1533,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-10",
-    "complement": "7-25"
+    "complement": "7-25",
+    "alternate": "NA"
   },
   "5-26": {
     "prime": [
@@ -1482,7 +1555,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-26",
-    "complement": "7-26"
+    "complement": "7-26",
+    "alternate": "NA"
   },
   "5-27": {
     "prime": [
@@ -1503,7 +1577,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-3",
-    "complement": "7-27"
+    "complement": "7-27",
+    "alternate": "NA"
   },
   "5-28": {
     "prime": [
@@ -1524,7 +1599,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-28",
-    "complement": "7-28"
+    "complement": "7-28",
+    "alternate": "NA"
   },
   "5-29": {
     "prime": [
@@ -1545,7 +1621,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-4",
-    "complement": "7-29"
+    "complement": "7-29",
+    "alternate": "NA"
   },
   "5-30": {
     "prime": [
@@ -1566,7 +1643,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-13",
-    "complement": "7-30"
+    "complement": "7-30",
+    "alternate": "NA"
   },
   "5-31": {
     "prime": [
@@ -1587,7 +1665,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-31",
-    "complement": "7-31"
+    "complement": "7-31",
+    "alternate": "NA"
   },
   "5-32": {
     "prime": [
@@ -1608,7 +1687,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-16",
-    "complement": "7-32"
+    "complement": "7-32",
+    "alternate": "NA"
   },
   "5-33": {
     "prime": [
@@ -1629,7 +1709,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-33",
-    "complement": "7-33"
+    "complement": "7-33",
+    "alternate": "NA"
   },
   "5-34": {
     "prime": [
@@ -1650,7 +1731,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-8",
-    "complement": "7-34"
+    "complement": "7-34",
+    "alternate": "NA"
   },
   "5-35": {
     "prime": [
@@ -1671,7 +1753,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "5-1",
-    "complement": "7-35"
+    "complement": "7-35",
+    "alternate": "Anhemitonic Pentatonic Scale"
   },
   "5-z36": {
     "prime": [
@@ -1692,7 +1775,8 @@
     "z": "5-z12",
     "forte": "NA",
     "m": "5-z36",
-    "complement": "7-z36"
+    "complement": "7-z36",
+    "alternate": "NA"
   },
   "5-z37": {
     "prime": [
@@ -1713,7 +1797,8 @@
     "z": "5-z17",
     "forte": "NA",
     "m": "5-z17",
-    "complement": "7-z37"
+    "complement": "7-z37",
+    "alternate": "NA"
   },
   "5-z38": {
     "prime": [
@@ -1734,7 +1819,8 @@
     "z": "5-z18",
     "forte": "NA",
     "m": "5-z18",
-    "complement": "7-z38"
+    "complement": "7-z38",
+    "alternate": "NA"
   },
   "6-1": {
     "prime": [
@@ -1756,7 +1842,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "6-32",
-    "complement": "6-1"
+    "complement": "6-1",
+    "alternate": "NA"
   },
   "6-2": {
     "prime": [
@@ -1778,7 +1865,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "6-33",
-    "complement": "6-2"
+    "complement": "6-2",
+    "alternate": "NA"
   },
   "6-z3": {
     "prime": [
@@ -1800,7 +1888,8 @@
     "z": "6-z36",
     "forte": "NA",
     "m": "6-z25",
-    "complement": "6-z36"
+    "complement": "6-z36",
+    "alternate": "NA"
   },
   "6-z4": {
     "prime": [
@@ -1822,7 +1911,8 @@
     "z": "6-z37",
     "forte": "NA",
     "m": "6-z26",
-    "complement": "6-z37"
+    "complement": "6-z37",
+    "alternate": "NA"
   },
   "6-5": {
     "prime": [
@@ -1844,7 +1934,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "6-18",
-    "complement": "6-5"
+    "complement": "6-5",
+    "alternate": "NA"
   },
   "6-z6": {
     "prime": [
@@ -1866,7 +1957,8 @@
     "z": "6-z38",
     "forte": "NA",
     "m": "6-z38",
-    "complement": "6-z38"
+    "complement": "6-z38",
+    "alternate": "NA"
   },
   "6-7": {
     "prime": [
@@ -1888,7 +1980,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "6-7",
-    "complement": "6-7"
+    "complement": "6-7",
+    "alternate": "NA"
   },
   "6-8": {
     "prime": [
@@ -1910,7 +2003,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "6-8",
-    "complement": "6-8"
+    "complement": "6-8",
+    "alternate": "NA"
   },
   "6-9": {
     "prime": [
@@ -1932,7 +2026,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "6-9",
-    "complement": "6-9"
+    "complement": "6-9",
+    "alternate": "NA"
   },
   "6-z10": {
     "prime": [
@@ -1954,7 +2049,8 @@
     "z": "6-z39",
     "forte": "NA",
     "m": "6-z46",
-    "complement": "6-z39"
+    "complement": "6-z39",
+    "alternate": "NA"
   },
   "6-z11": {
     "prime": [
@@ -1976,7 +2072,8 @@
     "z": "6-z40",
     "forte": "NA",
     "m": "6-z40",
-    "complement": "6-z40"
+    "complement": "6-z40",
+    "alternate": "NA"
   },
   "6-z12": {
     "prime": [
@@ -1998,7 +2095,8 @@
     "z": "6-z41",
     "forte": "NA",
     "m": "6-z12",
-    "complement": "6-z41"
+    "complement": "6-z41",
+    "alternate": "NA"
   },
   "6-z13": {
     "prime": [
@@ -2020,7 +2118,8 @@
     "z": "6-z42",
     "forte": "NA",
     "m": "6-z50",
-    "complement": "6-z42"
+    "complement": "6-z42",
+    "alternate": "NA"
   },
   "6-14": {
     "prime": [
@@ -2042,7 +2141,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "6-14",
-    "complement": "6-14"
+    "complement": "6-14",
+    "alternate": "NA"
   },
   "6-15": {
     "prime": [
@@ -2064,7 +2164,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "6-31",
-    "complement": "6-15"
+    "complement": "6-15",
+    "alternate": "NA"
   },
   "6-16": {
     "prime": [
@@ -2086,7 +2187,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "6-16",
-    "complement": "6-16"
+    "complement": "6-16",
+    "alternate": "NA"
   },
   "6-z17": {
     "prime": [
@@ -2108,7 +2210,8 @@
     "z": "6-z43",
     "forte": "NA",
     "m": "6-z17",
-    "complement": "6-z43"
+    "complement": "6-z43",
+    "alternate": "All-Trichord Hexachord"
   },
   "6-18": {
     "prime": [
@@ -2130,7 +2233,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "6-5",
-    "complement": "6-18"
+    "complement": "6-18",
+    "alternate": "NA"
   },
   "6-z19": {
     "prime": [
@@ -2152,7 +2256,8 @@
     "z": "6-z44",
     "forte": "NA",
     "m": "6-z44",
-    "complement": "6-z44"
+    "complement": "6-z44",
+    "alternate": "NA"
   },
   "6-20": {
     "prime": [
@@ -2174,7 +2279,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "6-20",
-    "complement": "6-20"
+    "complement": "6-20",
+    "alternate": "NA"
   },
   "6-21": {
     "prime": [
@@ -2196,7 +2302,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "6-34",
-    "complement": "6-21"
+    "complement": "6-21",
+    "alternate": "NA"
   },
   "6-22": {
     "prime": [
@@ -2218,7 +2325,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "6-22",
-    "complement": "6-22"
+    "complement": "6-22",
+    "alternate": "NA"
   },
   "6-z23": {
     "prime": [
@@ -2240,7 +2348,8 @@
     "z": "6-z45",
     "forte": "NA",
     "m": "6-z23",
-    "complement": "6-z45"
+    "complement": "6-z45",
+    "alternate": "NA"
   },
   "6-z24": {
     "prime": [
@@ -2262,7 +2371,8 @@
     "z": "6-z46",
     "forte": "NA",
     "m": "6-z39",
-    "complement": "6-z46"
+    "complement": "6-z46",
+    "alternate": "NA"
   },
   "6-z25": {
     "prime": [
@@ -2284,7 +2394,8 @@
     "z": "6-z47",
     "forte": "NA",
     "m": "6-z3",
-    "complement": "6-z47"
+    "complement": "6-z47",
+    "alternate": "NA"
   },
   "6-z26": {
     "prime": [
@@ -2306,7 +2417,8 @@
     "z": "6-z48",
     "forte": "NA",
     "m": "6-z4",
-    "complement": "6-z48"
+    "complement": "6-z48",
+    "alternate": "NA"
   },
   "6-27": {
     "prime": [
@@ -2328,7 +2440,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "6-27",
-    "complement": "6-27"
+    "complement": "6-27",
+    "alternate": "NA"
   },
   "6-z28": {
     "prime": [
@@ -2350,7 +2463,8 @@
     "z": "6-z49",
     "forte": "NA",
     "m": "6-z28",
-    "complement": "6-z49"
+    "complement": "6-z49",
+    "alternate": "NA"
   },
   "6-z29": {
     "prime": [
@@ -2379,7 +2493,8 @@
       9
     ],
     "m": "6-z42",
-    "complement": "6-z50"
+    "complement": "6-z50",
+    "alternate": "Bridge Chord"
   },
   "6-30": {
     "prime": [
@@ -2401,7 +2516,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "6-30",
-    "complement": "6-30"
+    "complement": "6-30",
+    "alternate": "Petrushka Chord"
   },
   "6-31": {
     "prime": [
@@ -2430,7 +2546,8 @@
       9
     ],
     "m": "6-15",
-    "complement": "6-31"
+    "complement": "6-31",
+    "alternate": "NA"
   },
   "6-32": {
     "prime": [
@@ -2452,7 +2569,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "6-1",
-    "complement": "6-32"
+    "complement": "6-32",
+    "alternate": "Guidonian Hexachord"
   },
   "6-33": {
     "prime": [
@@ -2474,7 +2592,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "6-2",
-    "complement": "6-33"
+    "complement": "6-33",
+    "alternate": "NA"
   },
   "6-34": {
     "prime": [
@@ -2496,7 +2615,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "6-21",
-    "complement": "6-34"
+    "complement": "6-34",
+    "alternate": "Mystic Chord"
   },
   "6-35": {
     "prime": [
@@ -2518,7 +2638,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "6-35",
-    "complement": "6-35"
+    "complement": "6-35",
+    "alternate": "Whole-Tone Scale"
   },
   "6-z36": {
     "prime": [
@@ -2540,7 +2661,8 @@
     "z": "6-z3",
     "forte": "NA",
     "m": "6-z47",
-    "complement": "6-z3"
+    "complement": "6-z3",
+    "alternate": "NA"
   },
   "6-z37": {
     "prime": [
@@ -2562,7 +2684,8 @@
     "z": "6-z4",
     "forte": "NA",
     "m": "6-z48",
-    "complement": "6-z4"
+    "complement": "6-z4",
+    "alternate": "NA"
   },
   "6-z38": {
     "prime": [
@@ -2584,7 +2707,8 @@
     "z": "6-z6",
     "forte": "NA",
     "m": "6-z6",
-    "complement": "6-z6"
+    "complement": "6-z6",
+    "alternate": "NA"
   },
   "6-z39": {
     "prime": [
@@ -2606,7 +2730,8 @@
     "z": "6-z10",
     "forte": "NA",
     "m": "6-z24",
-    "complement": "6-z10"
+    "complement": "6-z10",
+    "alternate": "NA"
   },
   "6-z40": {
     "prime": [
@@ -2628,7 +2753,8 @@
     "z": "6-z11",
     "forte": "NA",
     "m": "6-z11",
-    "complement": "6-z11"
+    "complement": "6-z11",
+    "alternate": "NA"
   },
   "6-z41": {
     "prime": [
@@ -2650,7 +2776,8 @@
     "z": "6-z12",
     "forte": "NA",
     "m": "6-z41",
-    "complement": "6-z12"
+    "complement": "6-z12",
+    "alternate": "NA"
   },
   "6-z42": {
     "prime": [
@@ -2672,7 +2799,8 @@
     "z": "6-z13",
     "forte": "NA",
     "m": "6-z29",
-    "complement": "6-z13"
+    "complement": "6-z13",
+    "alternate": "NA"
   },
   "6-z43": {
     "prime": [
@@ -2694,7 +2822,8 @@
     "z": "6-z17",
     "forte": "NA",
     "m": "6-z43",
-    "complement": "6-z17"
+    "complement": "6-z17",
+    "alternate": "NA"
   },
   "6-z44": {
     "prime": [
@@ -2716,7 +2845,8 @@
     "z": "6-z19",
     "forte": "NA",
     "m": "6-z19",
-    "complement": "6-z19"
+    "complement": "6-z19",
+    "alternate": "Schoenberg Hexachord"
   },
   "6-z45": {
     "prime": [
@@ -2738,7 +2868,8 @@
     "z": "6-z23",
     "forte": "NA",
     "m": "6-z45",
-    "complement": "6-z23"
+    "complement": "6-z23",
+    "alternate": "NA"
   },
   "6-z46": {
     "prime": [
@@ -2760,7 +2891,8 @@
     "z": "6-z24",
     "forte": "NA",
     "m": "6-z10",
-    "complement": "6-z24"
+    "complement": "6-z24",
+    "alternate": "NA"
   },
   "6-z47": {
     "prime": [
@@ -2782,7 +2914,8 @@
     "z": "6-z25",
     "forte": "NA",
     "m": "6-z36",
-    "complement": "6-z25"
+    "complement": "6-z25",
+    "alternate": "NA"
   },
   "6-z48": {
     "prime": [
@@ -2804,7 +2937,8 @@
     "z": "6-z26",
     "forte": "NA",
     "m": "6-z37",
-    "complement": "6-z26"
+    "complement": "6-z26",
+    "alternate": "NA"
   },
   "6-z49": {
     "prime": [
@@ -2826,7 +2960,8 @@
     "z": "6-z28",
     "forte": "NA",
     "m": "6-z49",
-    "complement": "6-z28"
+    "complement": "6-z28",
+    "alternate": "NA"
   },
   "6-z50": {
     "prime": [
@@ -2848,7 +2983,8 @@
     "z": "6-z29",
     "forte": "NA",
     "m": "6-z13",
-    "complement": "6-z29"
+    "complement": "6-z29",
+    "alternate": "NA"
   },
   "7-1": {
     "prime": [
@@ -2871,7 +3007,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-35",
-    "complement": "5-1"
+    "complement": "5-1",
+    "alternate": "NA"
   },
   "7-2": {
     "prime": [
@@ -2894,7 +3031,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-23",
-    "complement": "5-2"
+    "complement": "5-2",
+    "alternate": "NA"
   },
   "7-3": {
     "prime": [
@@ -2917,7 +3055,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-27",
-    "complement": "5-3"
+    "complement": "5-3",
+    "alternate": "NA"
   },
   "7-4": {
     "prime": [
@@ -2940,7 +3079,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-29",
-    "complement": "5-4"
+    "complement": "5-4",
+    "alternate": "NA"
   },
   "7-5": {
     "prime": [
@@ -2963,7 +3103,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-14",
-    "complement": "5-5"
+    "complement": "5-5",
+    "alternate": "NA"
   },
   "7-6": {
     "prime": [
@@ -2986,7 +3127,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-20",
-    "complement": "5-6"
+    "complement": "5-6",
+    "alternate": "NA"
   },
   "7-7": {
     "prime": [
@@ -3009,7 +3151,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-7",
-    "complement": "5-7"
+    "complement": "5-7",
+    "alternate": "NA"
   },
   "7-8": {
     "prime": [
@@ -3032,7 +3175,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-34",
-    "complement": "5-8"
+    "complement": "5-8",
+    "alternate": "NA"
   },
   "7-9": {
     "prime": [
@@ -3055,7 +3199,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-24",
-    "complement": "5-9"
+    "complement": "5-9",
+    "alternate": "NA"
   },
   "7-10": {
     "prime": [
@@ -3078,7 +3223,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-25",
-    "complement": "5-10"
+    "complement": "5-10",
+    "alternate": "NA"
   },
   "7-11": {
     "prime": [
@@ -3101,7 +3247,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-11",
-    "complement": "5-11"
+    "complement": "5-11",
+    "alternate": "NA"
   },
   "7-z12": {
     "prime": [
@@ -3124,7 +3271,8 @@
     "z": "7-z36",
     "forte": "NA",
     "m": "7-z12",
-    "complement": "5-z12"
+    "complement": "5-z12",
+    "alternate": "NA"
   },
   "7-13": {
     "prime": [
@@ -3147,7 +3295,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-30",
-    "complement": "5-13"
+    "complement": "5-13",
+    "alternate": "NA"
   },
   "7-14": {
     "prime": [
@@ -3170,7 +3319,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-5",
-    "complement": "5-14"
+    "complement": "5-14",
+    "alternate": "NA"
   },
   "7-15": {
     "prime": [
@@ -3193,7 +3343,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-15",
-    "complement": "5-15"
+    "complement": "5-15",
+    "alternate": "NA"
   },
   "7-16": {
     "prime": [
@@ -3216,7 +3367,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-32",
-    "complement": "5-16"
+    "complement": "5-16",
+    "alternate": "NA"
   },
   "7-z17": {
     "prime": [
@@ -3239,7 +3391,8 @@
     "z": "7-z37",
     "forte": "NA",
     "m": "7-z37",
-    "complement": "5-z17"
+    "complement": "5-z17",
+    "alternate": "NA"
   },
   "7-z18": {
     "prime": [
@@ -3270,7 +3423,8 @@
       9
     ],
     "m": "7-z38",
-    "complement": "5-z18"
+    "complement": "5-z18",
+    "alternate": "NA"
   },
   "7-19": {
     "prime": [
@@ -3293,7 +3447,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-19",
-    "complement": "5-19"
+    "complement": "5-19",
+    "alternate": "NA"
   },
   "7-20": {
     "prime": [
@@ -3324,7 +3479,8 @@
       9
     ],
     "m": "7-6",
-    "complement": "5-20"
+    "complement": "5-20",
+    "alternate": "NA"
   },
   "7-21": {
     "prime": [
@@ -3347,7 +3503,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-21",
-    "complement": "5-21"
+    "complement": "5-21",
+    "alternate": "NA"
   },
   "7-22": {
     "prime": [
@@ -3370,7 +3527,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-22",
-    "complement": "5-22"
+    "complement": "5-22",
+    "alternate": "NA"
   },
   "7-23": {
     "prime": [
@@ -3393,7 +3551,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-2",
-    "complement": "5-23"
+    "complement": "5-23",
+    "alternate": "NA"
   },
   "7-24": {
     "prime": [
@@ -3416,7 +3575,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-9",
-    "complement": "5-24"
+    "complement": "5-24",
+    "alternate": "NA"
   },
   "7-25": {
     "prime": [
@@ -3439,7 +3599,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-10",
-    "complement": "5-25"
+    "complement": "5-25",
+    "alternate": "NA"
   },
   "7-26": {
     "prime": [
@@ -3462,7 +3623,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-26",
-    "complement": "5-26"
+    "complement": "5-26",
+    "alternate": "NA"
   },
   "7-27": {
     "prime": [
@@ -3485,7 +3647,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-3",
-    "complement": "5-27"
+    "complement": "5-27",
+    "alternate": "NA"
   },
   "7-28": {
     "prime": [
@@ -3508,7 +3671,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-28",
-    "complement": "5-28"
+    "complement": "5-28",
+    "alternate": "NA"
   },
   "7-29": {
     "prime": [
@@ -3531,7 +3695,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-4",
-    "complement": "5-29"
+    "complement": "5-29",
+    "alternate": "NA"
   },
   "7-30": {
     "prime": [
@@ -3554,7 +3719,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-13",
-    "complement": "5-30"
+    "complement": "5-30",
+    "alternate": "NA"
   },
   "7-31": {
     "prime": [
@@ -3577,7 +3743,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-31",
-    "complement": "5-31"
+    "complement": "5-31",
+    "alternate": "NA"
   },
   "7-32": {
     "prime": [
@@ -3600,7 +3767,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-16",
-    "complement": "5-32"
+    "complement": "5-32",
+    "alternate": "NA"
   },
   "7-33": {
     "prime": [
@@ -3623,7 +3791,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-33",
-    "complement": "5-33"
+    "complement": "5-33",
+    "alternate": "NA"
   },
   "7-34": {
     "prime": [
@@ -3646,7 +3815,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-8",
-    "complement": "5-34"
+    "complement": "5-34",
+    "alternate": "NA"
   },
   "7-35": {
     "prime": [
@@ -3669,7 +3839,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "7-1",
-    "complement": "5-35"
+    "complement": "5-35",
+    "alternate": "Diatonic Collection"
   },
   "7-z36": {
     "prime": [
@@ -3692,7 +3863,8 @@
     "z": "7-z12",
     "forte": "NA",
     "m": "7-z36",
-    "complement": "5-z36"
+    "complement": "5-z36",
+    "alternate": "NA"
   },
   "7-z37": {
     "prime": [
@@ -3715,7 +3887,8 @@
     "z": "7-z17",
     "forte": "NA",
     "m": "7-z17",
-    "complement": "5-z37"
+    "complement": "5-z37",
+    "alternate": "NA"
   },
   "7-z38": {
     "prime": [
@@ -3738,7 +3911,8 @@
     "z": "7-z18",
     "forte": "NA",
     "m": "7-z18",
-    "complement": "5-z38"
+    "complement": "5-z38",
+    "alternate": "NA"
   },
   "8-1": {
     "prime": [
@@ -3762,7 +3936,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-23",
-    "complement": "4-1"
+    "complement": "4-1",
+    "alternate": "NA"
   },
   "8-2": {
     "prime": [
@@ -3786,7 +3961,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-22",
-    "complement": "4-2"
+    "complement": "4-2",
+    "alternate": "NA"
   },
   "8-3": {
     "prime": [
@@ -3810,7 +3986,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-26",
-    "complement": "4-3"
+    "complement": "4-3",
+    "alternate": "NA"
   },
   "8-4": {
     "prime": [
@@ -3834,7 +4011,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-14",
-    "complement": "4-4"
+    "complement": "4-4",
+    "alternate": "NA"
   },
   "8-5": {
     "prime": [
@@ -3858,7 +4036,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-16",
-    "complement": "4-5"
+    "complement": "4-5",
+    "alternate": "NA"
   },
   "8-6": {
     "prime": [
@@ -3882,7 +4061,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-6",
-    "complement": "4-6"
+    "complement": "4-6",
+    "alternate": "NA"
   },
   "8-7": {
     "prime": [
@@ -3906,7 +4086,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-20",
-    "complement": "4-7"
+    "complement": "4-7",
+    "alternate": "NA"
   },
   "8-8": {
     "prime": [
@@ -3930,7 +4111,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-8",
-    "complement": "4-8"
+    "complement": "4-8",
+    "alternate": "NA"
   },
   "8-9": {
     "prime": [
@@ -3954,7 +4136,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-9",
-    "complement": "4-9"
+    "complement": "4-9",
+    "alternate": "NA"
   },
   "8-10": {
     "prime": [
@@ -3978,7 +4161,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-10",
-    "complement": "4-10"
+    "complement": "4-10",
+    "alternate": "NA"
   },
   "8-11": {
     "prime": [
@@ -4002,7 +4186,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-11",
-    "complement": "4-11"
+    "complement": "4-11",
+    "alternate": "NA"
   },
   "8-12": {
     "prime": [
@@ -4026,7 +4211,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-27",
-    "complement": "4-12"
+    "complement": "4-12",
+    "alternate": "NA"
   },
   "8-13": {
     "prime": [
@@ -4050,7 +4236,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-13",
-    "complement": "4-13"
+    "complement": "4-13",
+    "alternate": "NA"
   },
   "8-14": {
     "prime": [
@@ -4074,7 +4261,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-4",
-    "complement": "4-14"
+    "complement": "4-14",
+    "alternate": "NA"
   },
   "8-z15": {
     "prime": [
@@ -4098,7 +4286,8 @@
     "z": "8-z29",
     "forte": "NA",
     "m": "8-z29",
-    "complement": "4-z15"
+    "complement": "4-z15",
+    "alternate": "NA"
   },
   "8-16": {
     "prime": [
@@ -4122,7 +4311,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-5",
-    "complement": "4-16"
+    "complement": "4-16",
+    "alternate": "NA"
   },
   "8-17": {
     "prime": [
@@ -4146,7 +4336,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-17",
-    "complement": "4-17"
+    "complement": "4-17",
+    "alternate": "NA"
   },
   "8-18": {
     "prime": [
@@ -4170,7 +4361,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-18",
-    "complement": "4-18"
+    "complement": "4-18",
+    "alternate": "NA"
   },
   "8-19": {
     "prime": [
@@ -4194,7 +4386,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-19",
-    "complement": "4-19"
+    "complement": "4-19",
+    "alternate": "NA"
   },
   "8-20": {
     "prime": [
@@ -4218,7 +4411,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-7",
-    "complement": "4-20"
+    "complement": "4-20",
+    "alternate": "NA"
   },
   "8-21": {
     "prime": [
@@ -4242,7 +4436,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-21",
-    "complement": "4-21"
+    "complement": "4-21",
+    "alternate": "NA"
   },
   "8-22": {
     "prime": [
@@ -4266,7 +4461,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-2",
-    "complement": "4-22"
+    "complement": "4-22",
+    "alternate": "NA"
   },
   "8-23": {
     "prime": [
@@ -4290,7 +4486,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-1",
-    "complement": "4-23"
+    "complement": "4-23",
+    "alternate": "NA"
   },
   "8-24": {
     "prime": [
@@ -4314,7 +4511,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-24",
-    "complement": "4-24"
+    "complement": "4-24",
+    "alternate": "NA"
   },
   "8-25": {
     "prime": [
@@ -4338,7 +4536,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-25",
-    "complement": "4-25"
+    "complement": "4-25",
+    "alternate": "NA"
   },
   "8-26": {
     "prime": [
@@ -4371,7 +4570,8 @@
       10
     ],
     "m": "8-3",
-    "complement": "4-26"
+    "complement": "4-26",
+    "alternate": "NA"
   },
   "8-27": {
     "prime": [
@@ -4395,7 +4595,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-12",
-    "complement": "4-27"
+    "complement": "4-27",
+    "alternate": "NA"
   },
   "8-28": {
     "prime": [
@@ -4419,7 +4620,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "8-28",
-    "complement": "4-28"
+    "complement": "4-28",
+    "alternate": "Octatonic Scale"
   },
   "8-z29": {
     "prime": [
@@ -4443,7 +4645,8 @@
     "z": "8-z15",
     "forte": "NA",
     "m": "8-z15",
-    "complement": "4-z29"
+    "complement": "4-z29",
+    "alternate": "NA"
   },
   "9-1": {
     "prime": [
@@ -4468,7 +4671,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "9-9",
-    "complement": "3-1"
+    "complement": "3-1",
+    "alternate": "NA"
   },
   "9-2": {
     "prime": [
@@ -4493,7 +4697,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "9-7",
-    "complement": "3-2"
+    "complement": "3-2",
+    "alternate": "NA"
   },
   "9-3": {
     "prime": [
@@ -4518,7 +4723,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "9-11",
-    "complement": "3-3"
+    "complement": "3-3",
+    "alternate": "NA"
   },
   "9-4": {
     "prime": [
@@ -4543,7 +4749,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "9-4",
-    "complement": "3-4"
+    "complement": "3-4",
+    "alternate": "NA"
   },
   "9-5": {
     "prime": [
@@ -4568,7 +4775,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "9-5",
-    "complement": "3-5"
+    "complement": "3-5",
+    "alternate": "NA"
   },
   "9-6": {
     "prime": [
@@ -4593,7 +4801,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "9-6",
-    "complement": "3-6"
+    "complement": "3-6",
+    "alternate": "NA"
   },
   "9-7": {
     "prime": [
@@ -4618,7 +4827,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "9-2",
-    "complement": "3-7"
+    "complement": "3-7",
+    "alternate": "NA"
   },
   "9-8": {
     "prime": [
@@ -4643,7 +4853,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "9-8",
-    "complement": "3-8"
+    "complement": "3-8",
+    "alternate": "NA"
   },
   "9-9": {
     "prime": [
@@ -4668,7 +4879,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "9-1",
-    "complement": "3-9"
+    "complement": "3-9",
+    "alternate": "NA"
   },
   "9-10": {
     "prime": [
@@ -4693,7 +4905,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "9-10",
-    "complement": "3-10"
+    "complement": "3-10",
+    "alternate": "NA"
   },
   "9-11": {
     "prime": [
@@ -4718,7 +4931,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "9-3",
-    "complement": "3-11"
+    "complement": "3-11",
+    "alternate": "NA"
   },
   "9-12": {
     "prime": [
@@ -4743,7 +4957,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "9-12",
-    "complement": "3-12"
+    "complement": "3-12",
+    "alternate": "NA"
   },
   "10-1": {
     "prime": [
@@ -4769,7 +4984,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "10-5",
-    "complement": "2-1"
+    "complement": "2-1",
+    "alternate": "NA"
   },
   "10-2": {
     "prime": [
@@ -4795,7 +5011,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "10-2",
-    "complement": "2-2"
+    "complement": "2-2",
+    "alternate": "NA"
   },
   "10-3": {
     "prime": [
@@ -4821,7 +5038,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "10-3",
-    "complement": "2-3"
+    "complement": "2-3",
+    "alternate": "NA"
   },
   "10-4": {
     "prime": [
@@ -4847,7 +5065,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "10-4",
-    "complement": "2-4"
+    "complement": "2-4",
+    "alternate": "NA"
   },
   "10-5": {
     "prime": [
@@ -4873,7 +5092,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "10-1",
-    "complement": "2-5"
+    "complement": "2-5",
+    "alternate": "NA"
   },
   "10-6": {
     "prime": [
@@ -4899,7 +5119,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "10-6",
-    "complement": "2-6"
+    "complement": "2-6",
+    "alternate": "NA"
   },
   "11-1": {
     "prime": [
@@ -4926,7 +5147,8 @@
     "z": "NA",
     "forte": "NA",
     "m": "11-1",
-    "complement": "1-1"
+    "complement": "1-1",
+    "alternate": "NA"
   },
   "12-1": {
     "prime": [
@@ -4954,6 +5176,7 @@
     "z": "NA",
     "forte": "NA",
     "m": "12-1",
-    "complement": null
+    "complement": "0-0",
+    "alternate": "Chromatic Scale"
   }
 }
