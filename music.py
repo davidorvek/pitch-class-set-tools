@@ -551,6 +551,8 @@ def subsets(pc_set, cardinality = 'all'):
             result.append(find_forte(set))
         return dict(Counter(result))
 
+
+# Returns true if given set is a transposition of the prime form of the set class, false if otherwise
 def is_prime(pc_set):
     if deg_sym(pc_set)[1] > 0:
         return True
