@@ -550,3 +550,13 @@ def subsets(pc_set, cardinality = 'all'):
         for set in subsets:
             result.append(find_forte(set))
         return dict(Counter(result))
+
+def is_prime(pc_set):
+    if deg_sym(pc_set)[1] > 0:
+        return True
+    else:
+        fn = find_forte(pc_set)
+        for i in range(12):
+            if normal_order(trans(pc_set, i)) == sc[fn]['prime']:
+                return True
+        return False
