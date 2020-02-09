@@ -2,6 +2,7 @@ import json
 import random as r
 from collections import Counter
 import itertools
+import turtle
 
 # JSON object containing the Forte numbers, prime forms (using Rahn's alogrith), interval vectors, Z partners, and Forte prime form for every pitch-class set
 with open('/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/set_class.json','r') as sc_file:
@@ -562,3 +563,39 @@ def is_prime(pc_set):
             if normal_order(trans(pc_set, i)) == sc[fn]['prime']:
                 return True
         return False
+
+
+# Draws a pc set on a circle, step = 1 draws a chromatic circle, step = 7 draws a circle of fifths
+def draw_pcset(pc_set, step = 1):
+    # Settings for turtle
+    pen = turtle.Turtle()
+    pen.hideturtle()
+    pen.pensize(3)
+    pen.speed(0)
+    # Draw circle
+    pen.up()
+    pen.goto(0, 210)
+    pen.setheading(180)
+    pen.pendown()
+    pen.circle(210)
+    pen.penup()
+    pen.goto(0, 0)
+    pen.setheading(90)
+    # Draws pc set
+    for i in range(12):
+        if i in pc_set:
+            pen.fd(190)
+            pen.pendown()
+            pen.fd(20)
+            pen.penup()
+            pen.goto(0, 0)
+            pen.rt(30 * step)
+        else:
+            pen.fd(205)
+            pen.pendown()
+            pen.fd(5)
+            pen.penup()
+            pen.goto(0, 0)
+            pen.rt(30 * step)
+    turtle.getscreen().getcanvas().postscript(file = "%s.ps" % (array2string(pc_set)))
+    turtle.bye()
