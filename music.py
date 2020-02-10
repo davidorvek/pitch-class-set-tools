@@ -4,6 +4,7 @@ from collections import Counter
 import itertools
 import turtle
 
+
 # JSON object containing the Forte numbers, prime forms (using Rahn's alogrith), interval vectors, Z partners, and Forte prime form for every pitch-class set
 with open('/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/set_class.json','r') as sc_file:
     sc = json.load(sc_file)
@@ -598,4 +599,9 @@ def draw_pcset(pc_set, step = 1):
             pen.goto(0, 0)
             pen.rt(30 * step)
     turtle.getscreen().getcanvas().postscript(file = "%s.ps" % (array2string(pc_set)))
-    turtle.bye()
+    try:
+        turtle.bye()
+        turtle.mainloop()
+    except:
+        # Suppresses error message if you run the function a second time in the same session
+        pass
