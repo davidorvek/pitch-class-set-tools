@@ -492,13 +492,14 @@ def uniq_forms(row):
 
 # Gets the indexes under which a given row is P, I, and RI combinatorial
 def comb(hexachord):
+    comp = sorted(complement(hexachord))
     result = {'P': [], 'I': [], 'RI': []}
     for i in range(12):
-        if sorted(trans(hexachord, i)) == sorted(complement(hexachord)):
+        if sorted(trans(hexachord, i)) == comp:
             result['P'].append(i)
-        elif sorted(inv(hexachord, i)) == sorted(complement(hexachord)):
+        if sorted(inv(hexachord, i)) == comp:
             result['I'].append(i)
-        elif sorted(inv(hexachord, i)) == sorted(hexachord):
+        if sorted(inv(hexachord, i)) == sorted(hexachord):
             result['RI'].append(i)
     return result
 
