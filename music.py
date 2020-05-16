@@ -494,13 +494,13 @@ def uniq_forms(row):
 def comb_forms(row):
     second_hex = sorted(row[6:12])
     matrix = row_matrix(row)
-    comb_forms = []
+    forms = []
     for form in matrix:
         if form[0] == 'R' and len(form) == 2:
             pass # Removes retrograde forms, which are trivially combinatorial
         elif sorted(matrix[form][0:6]) == second_hex:
-            comb_forms.append(form)
-    return comb_forms
+            forms.append(form)
+    return forms
 
 
 # Transposes the given pitch-class set to begin on 0
