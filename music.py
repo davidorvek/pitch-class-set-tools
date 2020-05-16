@@ -490,18 +490,17 @@ def uniq_forms(row):
     return uniq_forms
 
 
-# Gets the indexes under which a given row is P, I, and RI combinatorial
-def comb(hexachord):
-    comp = sorted(complement(hexachord))
-    result = {'P': [], 'I': [], 'RI': []}
-    for i in range(12):
-        if sorted(trans(hexachord, i)) == comp:
-            result['P'].append(i)
-        if sorted(inv(hexachord, i)) == comp:
-            result['I'].append(i)
-        if sorted(inv(hexachord, i)) == sorted(hexachord):
-            result['RI'].append(i)
-    return result
+# Returns a list of the combinatorial forms of the given row
+def comb_forms(row):
+    second_hex = sorted(row[6:12])
+    matrix = row_matrix(row)
+    comb_forms = []
+    for form in matrix:
+        if form[0] == 'R' and len(form) == 2:
+            pass # Removes retrograde forms, which are trivially combinatorial
+        elif sorted(matrix[form][0:6]) == second_hex:
+            comb_forms.append(form)
+    return comb_forms
 
 
 # Transposes the given pitch-class set to begin on 0
