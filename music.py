@@ -54,7 +54,7 @@ def mult(pc_set, n = 7):
 
 # Finds the inversional index that relates a set whose root is a given interval from a given root
 def find_i(root, interval):
-    index = (root + (root - (5 - distance))) % 12
+    index = (root + (root - (5 - interval))) % 12
     return index
 
 
