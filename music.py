@@ -6,17 +6,17 @@ import turtle
 
 
 # JSON object containing the Forte numbers, prime forms (using Rahn's alogrith), interval vectors, Z partners, and Forte prime form for every pitch-class set
-with open('/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/set_class.json','r') as sc_file:
+with open('/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/set_class.json','r') as sc_file:
     sc = json.load(sc_file)
 
 
 # JSON object containing the sum-class system for every set class
-with open('/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/sum_class_system.json', 'r') as sum_class_file:
+with open('/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/sum_class_system.json', 'r') as sum_class_file:
     sum_class = json.load(sum_class_file)
 
 
 # JSON object that allows every consonant triad to be converted into a pitch-class set
-with open('/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/triads.json','r') as triads_file:
+with open('/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/triads.json','r') as triads_file:
     triads = json.load(triads_file)
 
 
