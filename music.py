@@ -270,7 +270,7 @@ def inventory(pc_set):
 def rand_set(n = r.randint(2,10)):
     aggregate = [0,1,2,3,4,5,6,7,8,9,10,11]
     random_set = []
-    for i in range(n):
+    for _ in range(n):
         r.shuffle(aggregate)
         random_set.append(aggregate.pop())
     return random_set
@@ -421,10 +421,8 @@ def find_forte(pc_set):
         prime = sc[z]['prime']
         if prime in trans_array:
             return z
-            break
         elif prime in inv_array:
             return z
-            break
 
 
 # Converts a string of pitch classes or intervals that uses no spaces and A, B, and C for 10, 11, and 12 into an array
