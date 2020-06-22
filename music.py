@@ -60,6 +60,7 @@ def find_i(root, interval):
 
 # Interval vector
 def iv(pc_set):
+    pc_set = list(set(pc_set))
     sort = sorted(pc_set)
     backwards = sort[::-1]
     intervals = []
@@ -74,8 +75,6 @@ def iv(pc_set):
         backwards.pop(0)
 
     for i in intervals:
-        if i == 0:
-            pass
         if i == 1 or i == 11:
             vector[0] += 1
         elif i == 2 or i == 10:
