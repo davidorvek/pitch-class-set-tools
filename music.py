@@ -437,6 +437,7 @@ def array2string(input_array):
     result = ''.join(['T' if i == 10 else 'E' if i == 11 else 'W' if i == 12 else str(i) for i in input_array])
     return result
 
+
 # Adds angled brackets to the beginning and end of a string of intervals or pitch classes
 def string2vector(input_string):
     result = '<' + input_string + '>'
@@ -604,3 +605,16 @@ def draw_pcset(pc_set, step = 1):
     except:
         # Suppresses error message if you run the function a second time in the same session
         pass
+
+
+# Transformations from Thomas M. Fiore and Ramon Satyendra,
+# "Generalized Contextual Groups," Music Theory Online 11, no. 3 (August 2005)
+def K(pc_set):
+    index = (pc_set[0] + pc_set[1]) % 12
+    return inv(pc_set, index)
+
+def Q(pc_set, i):
+    if is_prime(pc_set):
+        return trans(pc_set, i)
+    else:
+        return trans(pc_set, (12 - i)) 
