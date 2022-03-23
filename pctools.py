@@ -453,10 +453,10 @@ def row_matrix(row):
         r_form = p_form[::-1]
         i_form = trans(i_row, i)
         ri_form = i_form[::-1]
-        matrix['P%s' % (i)] = p_form
-        matrix['R%s' % (i)] = r_form
-        matrix['I%s' % (i)] = i_form
-        matrix['RI%s' % (i)] = ri_form
+        matrix['P%s' % (p_form[0])] = p_form
+        matrix['R%s' % (r_form[11])] = r_form
+        matrix['I%s' % (i_form[0])] = i_form
+        matrix['RI%s' % (ri_form[11])] = ri_form
     return matrix
 
 
@@ -490,13 +490,13 @@ def uniq_forms(row):
     return uniq_forms
 
 
-# Returns a list of the combinatorial forms of the given row
+# Returns a list of the row forms combinatorial with the given row
 def comb_forms(row):
     second_hex = sorted(row[6:12])
     matrix = row_matrix(row)
     forms = []
     for form in matrix:
-        if form[0] == 'R' and len(form) == 2:
+        if form[0] == 'R' and form[1] != 'I':
             pass # Removes retrograde forms, which are trivially combinatorial
         elif sorted(matrix[form][0:6]) == second_hex:
             forms.append(form)
@@ -617,4 +617,4 @@ def Q(pc_set, i):
     if is_prime(pc_set):
         return trans(pc_set, i)
     else:
-        return trans(pc_set, (12 - i)) 
+        return trans(pc_set, (12 - i))
